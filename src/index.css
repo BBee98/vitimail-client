@@ -4,4 +4,19 @@
   margin: 0;
   box-sizing: border-box;
   background: transparent;
+
+
+  font-family: Calibri, sans-serif;
+
+
+  /* variables */
+
+  --primary-color: rgb(216, 95, 107);
+  --secondary-color: rgb(10, 100, 124);
+  --accent-color: rgb(168, 208, 221);
+
+  --white-color: rgb(255, 255, 255);
+  --white-pale-color: rgb(249, 249, 249);
+
+  --black-color: rgb(0, 0, 0);
 }

@@ -1,0 +1,7 @@
+import TextBlock from "@components/TextBlock";
+import type {Component} from "@domain/Component.ts";
+import {TEXT_BLOCK_KEY} from "@domain/Key.ts";
+
+export const ComponentList: Array<Component> = [
+    { template: TextBlock(), key: TEXT_BLOCK_KEY }
+];

@@ -1,0 +1,9 @@
+.list {
+    grid-column: 8 / span 12;
+
+    list-style: none;
+    padding: 1rem;
+    min-height: 100vh;
+
+    background: var(--primary-color);
+}
