@@ -1,0 +1,16 @@
+:root {
+    --width: 100%;
+    --text-color: var(--black-color);
+    --text-size: 1rem;
+    --padding: 0.5rem;
+
+}
+
+.textBlock {
+    width: var(--width);
+    color: var(--text-color);
+
+    padding: var(--padding);
+
+    font-size: var(--text-size);
+}

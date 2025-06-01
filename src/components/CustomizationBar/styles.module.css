@@ -1,0 +1,5 @@
+.customizeBar:focus {
+    box-sizing: border-box;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+}

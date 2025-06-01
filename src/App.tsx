@@ -7,10 +7,10 @@ import styles from './styles.module.css';
 function App() {
     return (
         <RouterComponentsProvider>
-          <section className={styles.template}>
             <h1 className={styles.header}> Email Builder </h1>
-            <EmailTemplate className={styles.template}/>
-            <Menu/>
+            <section className={styles.template}>
+                <EmailTemplate className={styles.emailTemplate}/>
+                <Menu/>
           </section>
         </RouterComponentsProvider>
 

@@ -1,9 +1,9 @@
-import {type ReactNode} from "react";
+import {ComponentList} from "@domain/Component";
 import {useRouterComponents} from "@/hooks/useRouterComponents.ts";
+import {type ReactNode} from "react";
+import cx from "classnames";
 
 import styles from './styles.module.css'
-import cx from "classnames";
-import {ComponentList} from "@/components";
 
 type EmailTemplateProps = {
     className?: string;
@@ -25,6 +25,9 @@ export const EmailTemplate = ({className = ""}: EmailTemplateProps) => {
 
     return (
         <article className={templateCSS}>
-            {components?.map(key =>ComponentList[key]) }
+            {components?.map((key, index) => {
+                const Tag = ComponentList[key];
+                return <Tag key={`${index}-${key}`} id={key}/>
+            })}
         </article>)
 }

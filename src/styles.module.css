@@ -4,9 +4,11 @@
 }
 
 .header {
-    grid-column:  1 / span 12;
+    position: sticky;
+    width: 100%;
+    padding: 1rem;
 }
 
-.template {
-    grid-column: 1 / span 8;
+.emailTemplate {
+    grid-column: 1 / span 7;
 }
