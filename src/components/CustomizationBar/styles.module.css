@@ -1,5 +1,40 @@
+.customizeBar {
+    transition: border 0.1s;
+}
+
 .customizeBar:focus {
     box-sizing: border-box;
     border: 2px solid var(--primary-color);
     border-radius: 0.5rem;
+}
+
+.optionBar {
+    display: flex;
+    justify-content: flex-end;
+
+    visibility: hidden;
+    opacity: 0;
+    list-style: none;
+
+    max-width: 90%;
+
+    transition: visibility 0.1s, opacity 0.1s;
+}
+
+.customizeBar:focus ~ .optionBar {
+    visibility: visible;
+    opacity: 1;
+}
+
+.iconWrapper {
+    background: var(--primary-color);
+
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+
+.icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    color: var(--white-color);
 }
